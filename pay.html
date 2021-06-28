@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="cssFiles/payCss.css">
+        <title>Card</title>
+    </head>
+    <body>
+        <form action="thanks.html" onsubmit="return validate()">
+        <section>
+            <header>
+                <h2 class="logo">Traveller</h2>
+                <!-- <div class="search">
+                    <input  class="search-txt" type="text" name=" " placeholder="Search">
+                    <a class="search-btn" href="#">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </div> -->
+             
+                <ul>
+                    <li><a href = "home.html">Home</a></li>
+                    <li><a href = "mainPage.html">Explore</a></li>
+                    <li><a href="cart.html">Cart</a></li >
+                    <li><a href = "services.html">Services</a></li>
+                    <li><a href = "reviews.html">Review</a></li>
+                    <li><a href = "contactUs.html">Contact</a></li>
+                </ul>
+            </header>
+            <div class="mainSection">
+            <div class="cardf">
+                <div class="face  front">
+                    <div class="buttonBtx">
+                        <div class="btn">
+                            <input type="radio" id="debit" name="debit" value="debit" class="buttonRadio">
+                             <label for="debit">Debit Card</label>
+                        </div>
+                        <div class="btn">
+                             <input type="radio" id="credit" name="credit" value="credit" class="buttonRadio">
+                             <label for="credit">Credit Card</label>
+                         </div>
+                    </div>
+                    <!-- <h3 class="debit">Debit Card</h3>
+                    <h3 class="bank">Bank Name</h3> -->
+                    <img src="media/icons8-chip-card-100.png" class="chip">
+                    <input type="text" class="numbers" id="numb"  placeholder="Enter Card Number">
+                    <!-- <h3 class="numbers">1234 5678 9123 4567</h3> -->
+                    <h5 class="valid"><span>Valid<br>thru</span><span>Month/Year</span><span>
+                        <select name="months" id="months">
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                            <option value="1">3</option>
+                            <option value="1">4</option>
+                            <option value="1">5</option>
+                            <option value="1">6</option>
+                            <option value="1">7</option>
+                            <option value="1">8</option>
+                            <option value="1">9</option>
+                            <option value="1">10</option>
+                            <option value="1">11</option>
+                            <option value="1">12</option>
+                        </select>/
+                        <select name="years" id="years">
+                            <option value="1">21</option>
+                            <option value="1">22</option>
+                            <option value="1">23</option>
+                            <option value="1">24</option>
+                            <option value="1">25</option>
+                            <option value="1">26</option>
+                            <option value="1">27</option>
+                            <option value="1">28</option>
+                            <option value="1">29</option>
+                            <option value="1">30</option>
+                            <option value="1">31</option>
+                            <option value="1">32</option>
+                            <option value="1">33</option>
+
+                            <option value="1">34</option>
+                            <option value="1">35</option>
+                            <option value="1">36</option>
+                            <option value="1">37</option>
+                            <option value="1">38</option>
+                            <option value="1">39</option>
+                            <option value="1">40</option>
+                            
+                        </select>
+                    </span></h5>
+                    <!-- <h5 class="cardHolder">Chandra</h5> -->
+                    <input type="text" class="cardHolder" id="name" placeholder="Enter Card Holder Name">
+                </div>
+                
+            </div>
+            <div class="cardb">
+                <div class="face  back">
+                    <div class="blackbar"></div>
+                    <div class="ccvtext">
+                        <h5>Authorized Signature-not valid unless signed</h5>
+                        <div class="whitebar"></div>
+                        <div class="cvv"><input type="text"   id="cvv" placeholder="cvv">
+                            <div class="content">
+                                <h6>Enter CVV Here</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text">
+                        A credit card is different from a charge card, which requires the balance to be repaid in full each month or at the end of each statement cycle. In contrast, credit cards allow the consumers to build a continuing balance of debt, subject to interest being charged. Credit card numbers were originally embossed to allow easy transfer of the number to charge slip.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        </section>
+       
+            <div id="money"></div>
+            <button value="submit" class="pay">Pay</button> 
+     </form>
+       <script src="js/pay.js"></script>
+    </body>
+</html>

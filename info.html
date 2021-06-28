@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="cssFiles/jarallax.css">
+        <link rel="stylesheet" href="cssFiles/infoCss.css">
+       
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paris</title>
+    </head>
+    <body>
+
+
+        <div id="freezeLayer" class="freeze-layer" style="display:none;"></div>
+		
+		<div id="result"></div>
+		<div id="dialogCont" class="dialog">
+			<div class="dlg-header">
+				<span id="dlgHeader">Paris</span>
+			</div>
+			<div class="dlg-body">
+				<div id="dlgMessage">Number persons visiting along with you:</div>
+				<input id="dialogInputEl" type="text" class="dlg-input-el" />
+			</div>
+			<div class="dlg-footer">
+				<a onclick="CustomPrompt.okay();">Okay</a>
+				<a onclick="CustomPrompt.cancel();">Cancel</a>
+			</div>
+		</div>
+
+        <div id="freezeLayer" class="freeze-layer" style="display:none;"></div>
+		
+		<div id="result1"></div>
+		<div id="dialogCont1" class="dialog1">
+			<div class="dlg-header1">
+				<span id="dlgHeader1">Paris</span>
+			</div>
+			<div class="dlg-body1">
+				<div id="dlgMessage">Item added to cart :</div>
+                <div id="cartDataList"></div>
+				
+			</div>
+
+			<div class="dlg-footer1">
+				<a onclick="CustomPrompt1.okay();">Okay</a>
+			</div>
+		</div>
+        <section class="main-area">
+            <header>
+                <h2 class="logo">Traveller</h2>
+               
+             
+                <ul>
+                    <li><a href = "home.html">Home</a></li>
+                    <li><a href = "cart.html">Cart</a></li>
+
+                    <li><a href = "mainPage.html">Explore</a></li>
+
+                    <li><a href = "services.html">Services</a></li>
+                    <li><a href = "reviews.html">Review</a></li>
+                    <li><a href = "contactUs.html">Contact</a></li>
+                </ul>
+            </header>
+          
+            <button type="button" class="visit" id="cartBtn"  onclick="CustomPrompt.show('Number persons visiting along with you:', validateNumber);"><span><a >Visit Paris</a></span></button>
+            
+            <div class="visit1 price">
+               <span>Rs.20000 per Person</span>
+            </div>
+            <div class="mainSection">
+                <div class="sectionM">
+                     <div class="box">
+                         <h2 data-jarallax-element="0 -200">Eiffel Tower</h2>
+                        <div class="container">
+                            <div class="imgBx jarallax">
+                                <img src="media/denys-nevozhai-UzagqG756OU-unsplash.jpg" class="jarallax-img">
+                             </div>
+                             <div class="content" data-jarallax-element="-200 0">
+                                <p>The Eiffel Tower (la Tour Eiffel) ranks high on the list of places to visit in France and is the most-visited tourist attraction in the world. It's hard to believe that the structure was dismissed as a monstrosity when it was first unveiled. The iconic tower was designed by Alexandre-Gustave Eiffel for the Paris Exhibition of 1889, which marked the centenary of the French Revolution.</p>
+                                <a href="https://www.burjkhalifa.ae">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                 </div>
+                 <div class="sectionM">
+                    <div class="box">
+                         <h2 data-jarallax-element="0 200">Musée du Louvrer</h2>
+                         <div class="container">
+                            <div class="imgBx jarallax">
+                                 <img src="media/pexels-shvets-anna-2574641.jpg" class="jarallax-img">
+                            </div>
+                             <div class="content" data-jarallax-element="-200 0">
+                                 <p>A sumptuous palace that was once the home of France's kings, the Louvre is the most important of Paris' top museums. Visitors enter the museum in the courtyard of the palace at the glass pyramid (designed by Ieoh Ming Pei in 1917). The Louvre displays 35,000 artworks (many considered masterpieces) - from antiquities to European paintings of the 15th to 19th centuries</p>
+                                 <a href="https://www.louvre.fr/en">Know More</a>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="sectionM">
+                    <div class="box">
+                         <h2 data-jarallax-element="0 -200">Cathédrale Notre-Dame de Paris</h2>
+                         <div class="container">
+                            <div class="imgBx jarallax">
+                                <img src="media/france-paris-notre-dame.jpg" class="jarallax-img">
+                             </div>
+                            <div class="content" data-jarallax-element="-200 0">
+                                <p>Notre-Dame stands in the heart of Paris on the Île-de-la-Cité next to the Latin Quarter. An island in the Seine River, the Île-de-la-Cité is the historical and geographical center of Paris. On this small plot of land, the Romans built the Gallo-Roman city of Lutetia, and from the 6th century to the 14th century, the Kings of France resided here.</p>
+                                <a href="https://www.planetware.com/tourist-attractions-/paris-f-p-paris.htm">Know More</a>
+                             </div>
+                        </div>
+                     </div>
+                 </div>
+                <div class="sectionM">
+                <div class="box">
+                    <h2 data-jarallax-element="0 200">Avenue des Champs-Élysées</h2>
+                    <div class="container">
+                        <div class="imgBx jarallax">
+                            <img src="media/france-paris-top-attractions-avenue-champs-elysees.jpg" class="jarallax-img">
+                        </div>
+                        <div class="content" data-jarallax-element="-200 0">
+                            <p>The most monumental boulevard in Paris used to be a desolate field of marshland until the 17th century, when it was landscaped by André Le Nôtre. A century later, the Parisian city planner Baron Haussman designed the boulevard's elegant buildings. The Champs-Elysées is divided into two parts with the Rond-Point des Champs-Elysées as its intersection.</p>
+                            <a href="https://www.planetware.com/tourist-attractions-/paris-f-p-paris.htm">Know More</a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="sectionM">
+                 <div class="box">
+                     <h2 data-jarallax-element="0 -200">Sacré-Coeur and Quartier Montmartre</h2>
+                     <div class="container">
+                        <div class="imgBx jarallax">
+                            <img src="media/france-paris-sacre-coeur.jpg" class="jarallax-img">
+                        </div>
+                        <div class="content" data-jarallax-element="-200 0">
+                            <p>Sitting at the highest point in Paris like an ornamental decoration, the Basilique Sacré-Coeur has a special aura. Its alabaster facade blends Romanesque and Byzantine styles, and from far away, it looks like a wedding cake (which is its nickname).</p>    
+                             <a href="https://www.planetware.com/tourist-attractions-/paris-f-p-paris.htm">Know More</a>
+                       </div>
+                     </div>
+                 </div> 
+              </div>
+         </div>
+        <div class="footer">
+            <span><h2> More places to visit in Paris :-</h2></span>
+            <div class="images">
+                <div class="imgPos"><a href="#">Panthéon</a><img src="media/pexels-nicolas-7067281.jpg"></div>
+                <div class="imgPos"><a href="#">Musée d'Orsay</a><img src="media/pexels-pierre-blaché-4854659.jpg"></div>
+                <div class="imgPos"><a href="#">Palais Garnier</a><img src="media/pexels-margerretta-548094.jpg"></div>
+                <div class="imgPos"><a href="#">Arc de Triomphe</a><img src="media/pexels-pixabay-2344.jpg"></div>
+                <div class="imgPos last"><a href="#">Place de la Concorde</a><img src="media/pexels-david-henry-5440835.jpg"></div>
+                <!-- <div class="imgPos"><a href="#">Eiffel Tower</a><img src="media/pexels-thorsten-technoman-338515.jpg"></div> -->
+           </div>
+        </div>
+        </section>
+        <script src="js/jarallax.js"></script>
+        <script src="js/jarallax-element.js"></script>
+        <script type="text/javascript">
+             jarallax(document.querySelectorAll('.jarallax'), {
+                   speed: 0.4
+             });
+        </script>
+        <script src="js/cartData.js"></script>
+        <!-- <script src="js/cartParis.js"></script> -->
+        
+        <!-- <script type="text/javascript">
+
+			
+		</script> -->
+
+
+
+    </body>
+</html>

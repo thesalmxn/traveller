@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(218, 53, 53);
+}
+section{
+  display: flex;
+}
+/* body
+{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f5f5;
+  ox-sizing: border-box; 
+  font-family: 'Poppins', sans-serif;
+} */
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3px 35px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #b1b1ae;
+  border-radius: 10px;
+}
+
+header .logo
+{
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 35px;
+}
+
+/* header .logo:hover{
+
+  font-size: 22px;
+  letter-spacing: 2px;
+  position: relative;
+} */
+
+header .search
+{
+    position: relative;
+    padding-top: 5px;
+    margin-left: 100px;
+    /* transform: translate(-50%, -50%); */
+    background: rgb(18, 170, 124);
+    height: 60px;
+    padding: 10px;
+    border-radius:40px ;
+}
+header .search:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+header .search:hover > .search-btn{
+    background: white;
+}
+header .search-btn{
+    color: coral;
+    float: right;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    background: rgb(95, 240, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-weight: 400;
+}
+
+header .search-txt
+{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    line-height: 40px;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    width: 0px;
+}
+header .search-txt::placeholder{
+    color: white;
+}
+
+header ul li{
+    list-style: none;
+    display: inline-flex;
+    margin-right: 40px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  font-family: itim;
+
+}
+header ul li a:hover{
+  border-bottom:2px solid #ebeb0f;
+
+}
+.mainSection
+{
+    width: 1200px;
+    
+    margin: 110px auto;
+}
+
+.mainSection .container
+{ 
+    /* width: 1200px;
+    margin: 100px auto;  */
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(400px, 1fr));
+    grid-gap: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.mainSection .container .box
+{
+    position: relative;
+    padding: 40px;
+    padding-top: 80px;
+    transition: 0.5s;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 40px;
+}
+.mainSection .container .box:hover
+{
+    background: rgb(18, 170, 124);
+}
+.mainSection .container .box p{
+    padding: 0;
+    margin: 0;
+    font-family: itim;
+   font-size: 19px;
+    transition: 0.5s;
+}
+.mainSection .container .box h4
+{
+    margin: 20px 0 ;
+    padding: 0;
+    transition: 0.5s;
+    font-family: itim;
+
+    color: rgb(18, 170, 124);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.mainSection .container .box h4 span
+{
+    font-weight:600 ;
+    font-size: 14px;
+    color:#e99e2f;
+    transition: 0.5s;
+}
+.mainSection .container .box:hover p,
+.mainSection .container .box:hover h4,
+.mainSection .container .box:hover  h4 span 
+{
+    color: #fff;
+}
+
+.mainSection .container .box::after
+{
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+    width: 100px;
+    height: 80px;
+    background: url(../media/quoteImg2.png);
+    background-size: cover;
+    opacity: 0.05;
+    pointer-events: none;
+    transition: 0.5s;
+    transform: rotate(180deg) translateY(0px);
+}
+
+.mainSection .container .box:hover::after{
+    transform: rotate(180deg) translateY(-60px);   
+     opacity: 1;
+}
+.mainSection .container .box::before
+{
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    width: 100px;
+    height: 80px;
+    background: url(../media/quoteImg2.png);
+    background-size: cover;
+    opacity: 0.05;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.mainSection .container .box:hover:before{
+    transform:translateY(-60px) ;
+    opacity: 1;
+}
+
+@media (max-width:768px)
+{
+    .mainSection .container .box
+    {
+        margin-top: 80px;
+    }
+}

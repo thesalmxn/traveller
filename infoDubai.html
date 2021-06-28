@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="cssFiles/jarallax.css">
+        <link rel="stylesheet" href="cssFiles/infoDubaiCss.css">
+      
+        <!-- <script src="js/display.js" defer></script> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dubai</title>
+    </head>
+    <body>
+        
+        <div id="freezeLayer" class="freeze-layer" style="display:none;"></div>
+		
+		<div id="result"></div>
+		<div id="dialogCont" class="dialog">
+			<div class="dlg-header">
+				<span id="dlgHeader">Dubai</span>
+			</div>
+			<div class="dlg-body">
+				<div id="dlgMessage">Number persons visiting along with you:</div>
+				<input id="dialogInputEl" type="text" class="dlg-input-el" />
+			</div>
+			<div class="dlg-footer">
+				<a onclick="CustomPrompt.okay();">Okay</a>
+				<a onclick="CustomPrompt.cancel();">Cancel</a>
+			</div>
+		</div>
+
+        <div id="freezeLayer" class="freeze-layer" style="display:none;"></div>
+		
+		<div id="result1"></div>
+		<div id="dialogCont1" class="dialog1">
+			<div class="dlg-header1">
+				<span id="dlgHeader1">Dubai</span>
+			</div>
+			<div class="dlg-body1">
+				<div id="dlgMessage">Item added to cart :</div>
+                <div id="cartDataList"></div>
+				
+			</div>
+
+			<div class="dlg-footer1">
+				<a onclick="CustomPrompt1.okay();">Okay</a>
+			</div>
+		</div>
+
+        <section class="main-area">
+            <header>
+                <h2 class="logo">Traveller</h2>
+                <!-- <div class="search">
+                    <input  class="search-txt" type="text" name=" " placeholder="Dubai">
+                    <a class="search-btn" href="#">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </div> -->
+             
+                <ul>
+                    <li><a href = "home.html">Home</a></li>
+                    <li><a href = "cart.html">Cart</a></li>
+                    <li><a href = "mainPage.html">Explore</a></li>
+
+
+                    <li><a href = "services.html">Services</a></li>
+                    <li><a href = "reviews.html">Review</a></li>
+                    <li><a href = "contactUs.html">Contact</a></li>
+                </ul>
+            </header>
+            
+            <button type="button" class="visit" id="cartDubaiBtn" onclick="CustomPrompt.show('Number persons visiting along with you:', validateNumber);"><span><a >Visit Dubai</a></span></button>
+
+            <div class="visit1 price">
+                <span>Rs.18000 per Person</span>
+            </div>
+            <div class="mainSection">
+                <div class="sectionM">
+                     <div class="box">
+                         <h2 data-jarallax-element="0 -200">Burj Khalifa</h2>
+                        <div class="container">
+                            <div class="imgBx jarallax">
+                                <img src="media/pexels-denys-gromov-4546396.jpg" class="jarallax-img">
+                             </div>
+                             <div class="content" data-jarallax-element="-200 0">
+                                <p>Dubai's landmark building and major tourist attraction is the Burj Khalifa, which at 829.8 meters is the tallest building in the world and the most famous of the city's points of interest.
+                                    For most visitors, a trip to the observation deck on the 124th floor here is a must-do while in the city. The views across the city skyline from this bird's-eye perspective are simply staggering.</p>
+                                <a href="https://www.toureiffel.paris/en">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                 </div>
+                 <div class="sectionM">
+                    <div class="box">
+                         <h2 data-jarallax-element="0 200">Walk through History in Al Fahidi Quarter (Old Dubai)
+                        </h2>
+                         <div class="container">
+                            <div class="imgBx jarallax">
+                                 <img src="media/uae-dubai-bastakia-restored-street.jpg" class="jarallax-img">
+                            </div>
+                             <div class="content" data-jarallax-element="-200 0">
+                                <p>The Al Fahidi Quarter (previously known, and sometimes still referred to as the Bastakia neighborhood) was built in the late 19th century to be the home of wealthy Persian merchants who dealt mainly in pearls and textiles and were lured to Dubai because of the tax-free trading and access to Dubai Creek.
+                                    Al Fahidi occupies the eastern portion of Bur Dubai along the creek, and the coral and limestone buildings here, many with walls topped with wind-towers, have been excellently preserved.</p>
+                                <a href="https://www.planetware.com/tourist-attractions-/dubai-uae-dub-dubai.htm
+                                ">Know More</a>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="sectionM">
+                    <div class="box">
+                         <h2 data-jarallax-element="0 -200">Visit an Underwater World at Dubai Aquarium</h2>
+                         <div class="container">
+                            <div class="imgBx jarallax">
+                                <img src="media/uae-dubai-dubai-aquarium.jpg" class="jarallax-img">
+                             </div>
+                            <div class="content" data-jarallax-element="-200 0">
+                                <p>One of the city's top tourist attractions, the Dubai Aquarium houses 140 species of sea life in the huge suspended tank on the ground floor of the Dubai Mall.
+
+                                As well as free viewing from the mall, if you enter the Underwater Zoo, you can walk through the aquarium tunnels.
+                                
+                                Different activities help you get a closer look at the sea life. Glass bottom boat tours (on top of the tank) are particularly popular.</p>
+                                <a href="  http://www.thedubaiaquarium.com">Know More</a>
+                             </div>
+                        </div>
+                     </div>
+                 </div>
+                <div class="sectionM">
+                <div class="box">
+                    <h2 data-jarallax-element="0 200">Take Afternoon Tea in the Burj al-Arab</h2>
+                    <div class="container">
+                        <div class="imgBx jarallax">
+                            <img src="media/uae-dubai-burj-al-arab.jpg" class="jarallax-img">
+                        </div>
+                        <div class="content" data-jarallax-element="-200 0">
+                            <p>The Burj Al-Arab is the world's tallest hotel, standing 321 meters high on its own artificial island on the Dubai coastline.
+
+                                Designed to resemble a billowing dhow sail, the exterior of the building is lit up by a choreographed, colored lighting show at night.
+                                
+                                Decadent in every way possible, the Burj Al-Arab is one of the most expensive hotels in the world, with the most luxurious suites costing more than $15,000 for one night.</p>
+                            <a href="https://www.planetware.com/tourist-attractions-/dubai-uae-dub-dubai.htm">Know More</a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="sectionM">
+                 <div class="box">
+                     <h2 data-jarallax-element="0 -200">Enjoy World Class Theater at Dubai Opera</h2>
+                     <div class="container">
+                        <div class="imgBx jarallax">
+                            <img src="media/united-arab-emirates-dubai-attractions-dubai-opera.jpg" class="jarallax-img">
+                        </div>
+                        <div class="content" data-jarallax-element="-200 0">
+                        <p>For nighttime attractions, look no further. Opened in mid-2016, Dubai's classy new opera building is the centerpiece of the waterfront Opera District in downtown Dubai and set to become the city's major cultural hub and main entertainment venue.
+
+                               The Dubai Opera hosts a year-round program of famous musical theater productions, concerts by world-class musicians, opera, ballet, and classical music, as well as smaller productions, comedy nights, and concerts.</p>
+                            <a href="https://www.planetware.com/tourist-attractions-/paris-f-p-paris.htm">Know More</a>
+                       </div>
+                     </div>
+                 </div> 
+              </div>
+         </div>
+        
+        <div class="footer">
+            <span><h2> More places to visit in Dubai:-</h2></span>
+            <div class="images">
+                <div class="imgPos"><a href="#">Miracle Garden</a><img src="media/pexels-the-lazy-artist-gallery-1302991.jpg"></div>
+                <div class="imgPos"><a href="#">Dubai Fountain</a><img src="media/pexels-gajendra-bhati-3145426.jpg"></div>
+                <div class="imgPos"><a href="#">Dubai Creek</a><img src="media/pexels-rod-fernandez-4579127.jpg"></div>
+                <div class="imgPos last"><a href="#">Dubai Desert</a><img src="media/pexels-yasin-gündogdu-2867769.jpg"></div>
+                <div class="imgPos"><a href="#">Atlantis Aquaventure WaterPark                </a><img src="media/pexels-michael-block-3225531.jpg"></div>
+
+                <!-- <div class="imgPos"><a href="#">Eiffel Tower</a><img src="media/pexels-thorsten-technoman-338515.jpg"></div> -->
+           </div>
+        </div>
+        </section>
+        <script src="js/jarallax.js"></script>
+        <script src="js/jarallax-element.js"></script>
+        <script type="text/javascript">
+             jarallax(document.querySelectorAll('.jarallax'), {
+                   speed: 0.4
+             });
+        </script>
+          <script src="js/cartData.js" defer></script>
+          <script src="js/cartDubai.js" defer></script>
+          		
+
+    </body>
+</html>

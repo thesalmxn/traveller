@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign up Page</title>
+        <link rel="stylesheet" href="cssFiles/styleSignUp.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+      
+    </head>
+    <body>
+        <header>
+            <h2 class="logo">Traveller</h2>
+            <!-- <div class="search">
+                <input  class="search-txt" type="text" name=" " placeholder="Search">
+                <a class="search-btn" href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+          -->
+            <ul>
+                <li><a href = "home.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li >
+                    <li><a href = "mainPage.html">Explore</a></li>
+
+                <li><a href = "services.html">Services</a></li>
+                <li><a href = "reviews.html">Review</a></li>
+                <li><a href = "contactUs.html">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <div class="imgBx">
+                <img src="media/2406906.jpg">
+            </div>
+    
+            <div class="contentBx">
+               <div class="formBx">
+                   <h2>Sign up</h2>
+                <form onsubmit ="return validate()"  action="index.html">
+                   <div class="inputBx">
+                       <span>Firstname :</span>
+                       <input type="text" name="Firstname" placeholder="firstname" id="fname">
+                   </div>
+                   
+                   <div class="inputBx">
+                     <span>Lastname :</span>
+                     <input type="text" name="Lastname" placeholder="lastname" id="lname">
+                  </div>
+
+                  <div class="inputBx">
+                     <span>Mobile Number:</span>
+                     <input type="tel" name="Mobile-Number" placeholder="mobile number" id="mob">
+                  </div>
+
+                  <div class="inputBx">
+                    <span>Mail Id :</span>
+                    <input type="email" name="Mail-Id" placeholder="mail address" id="mail">
+                  </div>
+
+                  <div class="inputBx">
+                    <span>Date Of Birth(DOB) :</span>
+                    <input type="date" name="Date-Of-Birth" >
+                  </div>
+                 <div class="inputBx  radioBx">
+                    <span>Gender :</span>
+                    <div class="buttonBtx">
+                        <input type="radio" id="male" name="gender" value="male" class="buttonRadio"  id ="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" class="buttonRadio" id ="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other" class="buttonRadio" id ="others">
+                        <label for="other">Other</label>
+                    </div>
+                 </div>
+                   <div class="inputBx">
+                      <span>Password : </span>
+                      <input type="password"  placeholder="password" id="pwd"> 
+                    </div>
+
+                    <div class="inputBx repwd">
+                        <span>Re-Enter Password : </span>
+                        <input type="text" name="re-password" placeholder="Reenter-password" id="repwd">
+                    </div>
+                    
+                   
+                    <div class="inputBx  captcha">
+                        <span>Enter captcha : </span>
+                        <!-- <input type="text" name="captchaGiven" class="captchaCom"  value="V3ow6Tu" readonly> -->
+                        <div class="captchaCom" id="captchaComm" ></div>
+                        <!-- <h3  class="captchaCom" id="captchaComm" value="V3ow6Tu">V3ow6Tu</h3> -->
+                       
+                        <input type="text" name="captcha" placeholder="Enter here"  id="captcha">
+                    </div>
+
+                    <div class="inputBx"> 
+                        <span class="btn" ><button id="btnSign" value="submit" ><a>Sign up</a></button></span>
+                    </div>
+                </form>
+
+
+                    
+                 
+                </div>
+            </div>
+            <div class="social-menu">
+                <span>OR</span>
+                <ul>
+                    <li><a href="https://www.google.com/"><i class="fa fa-google"></i></a></li>
+                    <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <script src="js/signUp.js"></script>
+    </body>
+
+</html>

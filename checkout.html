@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="cssFiles/checkoutCss.css">
+    
+       
+         <title>Payment</title>
+    </head>
+    <body>
+        <form action="pay.html" onsubmit="return validate()">
+        <section class="main-area">
+            <header>
+                <h2 class="logo">Traveller</h2>
+                <!-- <div class="search">
+                    <input  class="search-txt" type="text" name=" " placeholder="Search">
+                    <a class="search-btn" href="#">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </div> -->
+             
+                <ul>
+                    <li><a href = "home.html">Home</a></li>
+                    <li><a href = "cart.html">Cart</a></li>
+                    <li><a href = "mainPage.html">Explore</a></li>
+
+                    <li><a href = "services.html">Services</a></li>
+                    <li><a href = "reviews.html">Review</a></li>
+                    <li><a href = "contactUs.html">Contact</a></li>
+                </ul>
+            </header>
+            <div class="head">
+                <h2>Make Your Payment Here</h2>
+                <div id="money"></div>
+            </div>
+           
+            <div class="mainSection">
+                
+                <div class="formBx">
+                             <h3>Billing Address</h3>
+                       <div class="inputBx">
+                            <label for="fname"><i class="fa fa-user"></i>Full Name :</label>
+                            <input type="text" id="fname" name="fistname" placeholder="Madhan mohan">
+                        </div>
+                        <div class="inputBx">      
+                             <label for="email"><i class="fa fa-envelope"></i>Email :</label>
+                             <input type="text" id="email" name="email" placeholder="Madhan@example.com">
+                            </div>
+                        <div class="inputBx">
+
+                              <label for="adr"><i class="fa fa-address-card-o"></i>Address : </label>
+                               <input type="text" id="adr" name="adr" placeholder="142 W 7th street">
+                            </div>
+                         <div class="inputBx">
+                                        
+                                <label for="city"><i class="fa fa-institution"></i>City :</label>
+                                <input type="text" id="city" name="city" placeholder="Banglore">
+
+                            </div>
+                            
+                         <div class="inputBx">
+
+                                 <div class="inputBx add">
+                                           <label for="state">State :</label>
+                                            <input type="text" id="state" name="state" placeholder="Andhra Pradesh">
+                                </div>
+                            </div>
+                            
+                         <div class="inputBx">
+                                <div class="inputBx zipCode">
+                                         <label for="zip">Zip :</label>
+                                        <input type="text" id="zip" name="zip" placeholder="500001">
+                                </div>
+                        </div>
+                      </div>
+               
+                <div class="payment">
+                    <h3>Payment</h3>
+                    <label for="fname">Accepted Card</label>
+                    <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:  navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:  blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:  red;"></i>
+                        <i class="fa fa-cc-discover" style="color:  orange;"></i>
+                    </div>
+                    <div class="pc"><button><a>Pay With Card</a></button></div>
+                    <h4>OR</h4>
+                    <span>Pay With</span>
+                 <div class="pp">
+                    <a href="https://www.paypal.com/">Paypal</a>
+                    <a href="https://www.paytm.com/">Paytm</a>
+                    <a href="https://www.phonepe.com/">Phone Pay</a>
+                </div >
+                <h4>OR</h4>
+                    <span>Pay With</span>
+                <div class="nb">
+                    <a href="https://www.onlinesbi.com/">Net Banking</a>
+                </div>
+                </div>
+               
+
+            </div>
+        </section>
+    </form>
+        <!-- <script src="js/cartData.js" defer></script> -->
+        <script src="js/checkOut.js" defer></script>
+         
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="cssFiles/mainPageCss.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <title>Main Page</title>
+      
+      
+    </head>
+    <body>
+        <section class="main-area">
+            <header>
+                <h2 class="logo">Traveller</h2>
+                <div class="search">
+                    <input  class="search-txt" type="text" name=" " placeholder="Search">
+                    <a class="search-btn" href="#">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </div>
+             
+                <ul>
+                    <li><a href = "home.html">Home</a></li>
+                    <li><a href = "cart.html">Cart</a></li>
+
+                    <li><a href = "mainPage.html">Explore</a></li>
+
+                    <li><a href = "services.html">Services</a></li>
+                    <li><a href = "reviews.html">Review</a></li>
+                    <li><a href = "contactUs.html">Contact</a></li>
+                </ul>
+            </header>
+        
+            <div class="main-section">
+                <div class="country">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="infoDubai.html">Dubai</a><img src="media/dubai.jpg" alt=""></div>
+                            <div class="swiper-slide"><a href="info.html">Paris</a><img src="media/paris.jpg" alt=""></div>   
+                            <div class="swiper-slide"><a href="infoJapan.html">Japan</a><img src="media/japan.jpg" alt=""></div>
+
+                            <div class="swiper-slide"><a href="https://www.wikipedia.org/">London</a><img src="media/london.jpg" alt=""></div>
+                            <div class="swiper-slide"><a href="https://www.wikipedia.org/">Amsterdam</a><img src="media/amsterdam.jpg" alt=""></div>
+                            <div class="swiper-slide"><a href="https://www.wikipedia.org/">NewYork</a><img src="media/newyork.jpg" alt=""></div>
+                            <div class="swiper-slide"><a href="https://www.wikipedia.org/">Thailand</a><img src="media/thailand.jpg" alt=""></div>
+                            <div class="swiper-slide"><a href="https://www.wikipedia.org/">Singapore</a><img src="media/singapore.jpg" alt=""></div>
+             
+                            <div class="swiper-slide"><a href="https://www.wikipedia.org/">Italy</a><img src="media/italy.jpg" alt=""></div>
+                            <div class="swiper-slide"><a href="https://www.wikipedia.org/">India</a><img src="media/india.jpg" alt=""></div>
+                            <div class="swiper-slide"><a href="https://www.wikipedia.org/">Switzerland</a><img src="media/switzerland.jpg" alt=""></div>
+                            <div class="swiper-slide"><a href="https://www.wikipedia.org/">Maldives</a><img src="media/maldives.jpg" alt=""></div>
+                            <div class="swiper-slide"><a href="https://www.wikipedia.org/">Australia</a><img src="media/australia.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                    <script>
+                        var swiper = new Swiper(".swiper-container",{
+                            effect:'coverflow',
+                            grabCursor:true,
+                            ceneteredSlides:true,
+                            slidesPerView:'auto',
+                            coverflowEffect:{
+                                rotate:20,
+                                stretch:0,
+                                depth:200,
+                                modifier:1,
+                                slideShadows:true,
+                            },
+                            loop:true,
+                        })
+                    </script>
+            
+
+                </div>
+                <div class="country-events">
+                    <span><h3>EVENTS IN DIFFERENT COUNTRIES :-</h3></span>
+                    <div class="options">
+                        <div class="option"><p class="head">ICE  FESTIVAL</p> <!--<span class="sub">(HARBIN, CHINA) </span>-->
+                            <div class="content">
+                                <p>Harbins hosts the largest snow and ICE FESTIVAL with carvings over 20 ft height. (HARBIN, CHINA)</p>
+                            </div>
+                        </div>
+                        <div class="option"><p class="head">HOLI  FESTIVAL</p><!-- <span class="sub"> (INDIA)</span>-->
+                            <div class="content">
+                                <p>The celebartion of spring and color HOLI FESTIVAL is an ancient hindu tradition. (INDIA)</p>
+                            </div>
+                        </div>
+                        <div class="option"><p class="head"><span>BALLOON  FIESTA</span> </p> <!--<span class="sub"> (ALBUQUERQUE, NEW MAXICO)</span>-->
+                            <div class="content">
+                                <p>With over 750 ballons, Albuquerque BALLOON FIESTA is the biggest festival of its kind. (ALBUQUERQUE, NEW MAXICO)</p>
+                            </div>
+                        </div>
+                        <div class="option"><p class="head">BURNING MAN</p><!-- <span class="sub"></span>-->
+                            <div class="content">
+                                <p>Up to 48,000 people gather for the BURNING MAN  festival in Nevada's Black Rock Desert.</p>
+                            </div>
+                        </div>
+                        <div class="option"><p class="head">SKY LANTERNS</p> <!--<span class="sub"> (TAIWAN , CHINA)</span>-->
+                            <div class="content">
+                                <p>The sky is colored with millions of SKT LANTERNS during the PINGXI LANTERN festival. (TAIWAN , CHINA)</p>
+                            </div>
+                        </div>
+                        <div class="option"><p class="head">SAN FERMIN</p> <!--<span class="sub"> (PAMPLONA , SPAIN)</span>-->
+                            <div class="content">
+                                <p>Running of the bulls attracts people to SAN FERMIN festival in PAMPLONA , SPAIN. (PAMPLONA , SPAIN)</p>
+                            </div>
+                        </div>
+                        <div class="option"><p class="head"><span>VENICE CARNIVAL</span></p> <!--<span class="sub"> (VENICE , ITALY)</span>-->
+                            <div class="content">
+                                <p>The tradition of dressing up for VENICE CARNIVAL  in ITALY dates back over 900 years. (VENICE , ITALY)</p>
+                            </div>
+                        </div>
+                        <div class="option"><p class="head sub">OKTOBERFEST</p> <!--<span class="sub">(MUNICH , GERMANY)</span>-->  
+                            <div class="content">
+                                <p>World's largest beer festival, OKTOBERFEST is annually held in MUNICH , GERMANY. (MUNICH , GERMANY)</p>
+                            </div>
+                        </div>
+                   </div>
+                
+                </div>
+            </div>
+           
+            <div class="offer">
+                <h3>OFFERS :-</h3>
+                <div class="container">
+                    <div class="box">
+                        <div class="icon">10% OFF</div>
+                            <div class="content">
+                                <h4>1 person or more</h4>
+                                <p>On visting more than two countries.
+                                </p>
+                                <a href="offers.html">Read More</a>
+                            </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">15% OFF</div>
+                            <div class="content">
+                                <h4>More than 2 persons</h4>
+                                <p>On visting both Singapore and Thailand.
+                                </p>
+                                <a href="offers.html">Read More</a>
+                            </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">25% OFF</div>
+                            <div class="content">
+                                <h4>More than 3 persons</h4>
+                                <p>On visting more than 3 countries.
+                                </p>
+                                <a href="offers.html">Read More</a>
+                            </div>
+                    </div>
+            </div>
+
+        </section>
+    </body>
+</html>

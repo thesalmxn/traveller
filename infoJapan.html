@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="cssFiles/jarallax.css">
+        <link rel="stylesheet" href="cssFiles/infoJapanCss.css">
+
+       
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Japan</title>
+    </head>
+    <body>
+        <div id="freezeLayer" class="freeze-layer" style="display:none;"></div>
+		
+		<div id="result"></div>
+		<div id="dialogCont" class="dialog">
+			<div class="dlg-header">
+				<span id="dlgHeader">Japan</span>
+			</div>
+			<div class="dlg-body">
+				<div id="dlgMessage">Number persons visiting along with you:</div>
+				<input id="dialogInputEl" type="text" class="dlg-input-el" />
+			</div>
+			<div class="dlg-footer">
+				<a onclick="CustomPrompt.okay();">Okay</a>
+				<a onclick="CustomPrompt.cancel();">Cancel</a>
+			</div>
+		</div>
+        <div id="freezeLayer" class="freeze-layer" style="display:none;"></div>
+		
+		<div id="result1"></div>
+		<div id="dialogCont1" class="dialog1">
+			<div class="dlg-header1">
+				<span id="dlgHeader1">Japan</span>
+			</div>
+			<div class="dlg-body1">
+				<div id="dlgMessage">Item added to cart :</div>
+                <div id="cartDataList"></div>
+				
+			</div>
+
+			<div class="dlg-footer1">
+				<a onclick="CustomPrompt1.okay();">Okay</a>
+			</div>
+		</div>
+
+        <section class="main-area">
+            <header>
+                <h2 class="logo">Traveller</h2>
+                <!-- <div class="search">
+                    <input  class="search-txt" type="text" name=" " placeholder="Dubai">
+                    <a class="search-btn" href="#">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </div>
+              -->
+                <ul>
+                    <li><a href = "home.html">Home</a></li>
+                    <li><a href = "cart.html">Cart</a></li>
+
+                    <li><a href = "mainPage.html">Explore</a></li>
+
+                    <li><a href = "services.html">Services</a></li>
+                    <li><a href = "reviews.html">Review</a></li>
+                    <li><a href = "contactUs.html">Contact</a></li>
+                </ul>
+            </header>
+            <!-- <div class="visit">
+                <a href="#">Visit Paris</a>
+            </div> -->
+            <!-- <div class="visit" id="cartJapan">
+                <a href="#">Visit Japan</a>
+            </div> -->
+         
+
+            <button type="button" class="visit" id="cartJapanBtn" onclick="CustomPrompt.show('Number persons visiting along with you:', validateNumber);"><span><a >Visit Japan</a></span></button>
+
+            <div class="visit1 price">
+                <span>Rs.17500 per Person</span>
+            </div>
+            <div class="mainSection">
+                <div class="sectionM">
+                     <div class="box">
+                         <h2 data-jarallax-element="0 -200">Mount Fuji</h2>
+                        <div class="container">
+                            <div class="imgBx jarallax">
+                                <img src="media/japan-attractions-mount-fuji.jpg" class="jarallax-img">
+                             </div>
+                             <div class="content" data-jarallax-element="-200 0">
+                                <p>Without a doubt Japan's most recognizable landmark, majestic Mount Fuji (Fuji-san) is also the country's highest mountain peak. Towering 3,776 meters over an otherwise largely flat landscape to the south and east, this majestic and fabled mountain is tall enough to be seen from Tokyo, more than 100 kilometers away.
+
+                                    Mount Fuji has for centuries been celebrated in art and literature and is now considered so important an icon that UNESCO recognized its world cultural significance in 2013. </p>
+                                    <a href="https://www.planetware.com/tourist-attractions/japan-jpn.htm">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                 </div>
+                 <div class="sectionM">
+                    <div class="box">
+                         <h2 data-jarallax-element="0 200">Imperial Tokyo
+                        </h2>
+                         <div class="container">
+                            <div class="imgBx jarallax">
+                                 <img src="media/japan-attractions-imperial-palace.jpg" class="jarallax-img">
+                            </div>
+                             <div class="content" data-jarallax-element="-200 0">
+                                <p>Tokyo's most famous landmark, the Imperial Palace with its beautiful 17th-century parks surrounded by walls and moats, is a must-see when visiting the nation's capital. Don't be put off by the fact that the majority of the palace is closed to the public (it's still in use by the Imperial family), as there is still enough to see simply by strolling the grounds.</p>
+
+                                <a href="https://www.planetware.com/tourist-attractions/japan-jpn.htm">Know More</a>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="sectionM">
+                    <div class="box">
+                         <h2 data-jarallax-element="0 -200">Hiroshima Peace Memorial Park</h2>
+                         <div class="container">
+                            <div class="imgBx jarallax">
+                                <img src="media/japan-attractions-hiroshima-peace-memorial-park.jpg" class="jarallax-img">
+                             </div>
+                            <div class="content" data-jarallax-element="-200 0">
+                                <p>While little needs to be said here of the horrors of the atomic bombing of Hiroshima in August 1945, much can be said of the incredible efforts this vibrant city has made to commemorate the many victims of the world's first nuclear attack. Perhaps even more importantly, Hiroshima has become a symbol of lasting peace.
+
+                                <a href=" https://www.planetware.com/tourist-attractions/japan-jpn.htm">Know More</a>
+                             </div>
+                        </div>
+                     </div>
+                 </div>
+                <div class="sectionM">
+                <div class="box">
+                    <h2 data-jarallax-element="0 200">Historic Kyoto</h2>
+                    <div class="container">
+                        <div class="imgBx jarallax">
+                            <img src="media/japan-attractions-kyoto.jpg" class="jarallax-img">
+                        </div>
+                        <div class="content" data-jarallax-element="-200 0">
+                            <p>
+                                One of Japan's most visited cities, lovely Kyoto - one of the few cities in the country to be spared the devastation of WWII - attracts more than 10 million visitors annually. Most of them are here to explore Kyoto's fine old streets and architecture, much of it unchanged since the Imperial family took up residence here more than 1,000 years ago.</p>
+                                <a href="https://www.planetware.com/tourist-attractions/japan-jpn.htm">Know More</a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="sectionM">
+                 <div class="box">
+                     <h2 data-jarallax-element="0 -200">Enjoy World Class Theater at Dubai Opera</h2>
+                     <div class="container">
+                        <div class="imgBx jarallax">
+                            <img src="media/united-arab-emirates-dubai-attractions-dubai-opera.jpg" class="jarallax-img">
+                        </div>
+                        <div class="content" data-jarallax-element="-200 0">
+                        <p>For nighttime attractions, look no further. Opened in mid-2016, Dubai's classy new opera building is the centerpiece of the waterfront Opera District in downtown Dubai and set to become the city's major cultural hub and main entertainment venue.
+
+                               The Dubai Opera hosts a year-round program of famous musical theater productions, concerts by world-class musicians, opera, ballet, and classical music, as well as smaller productions, comedy nights, and concerts.</p>
+                            <a href="https://www.planetware.com/tourist-attractions/japan-jpn.htm">Know More</a>
+                       </div>
+                     </div>
+                 </div> 
+              </div>
+         </div>
+        
+        <div class="footer">
+            <span><h2> More places to visit in Japan :-</h2></span>
+            <div class="images">
+                <div class="imgPos"><a href="#">Shirakawa-go Village</a><img src="media/pexels-pixabay-280221.jpg"></div>
+                <div class="imgPos"><a href="#">Kinkaku-ji,Kyoto</a><img src="media/pexels-pixabay-356629.jpg"></div>
+                <div class="imgPos"><a href="#">Blue Pond,Hokkaido</a><img src="media/pexels-mathias-pr-reding-4386144.jpg"></div>
+                <div class="imgPos last"><a href="#"> Miyajima Island</a><img src="media/pexels-jacob-morch-572780.jpg"></div>
+                <div class="imgPos"><a href="#">Takachiho Gorge, Miyazaki </a><img src="media/pexels-lars-mai-4815491.jpg"></div>
+
+                <!-- <div class="imgPos"><a href="#">Eiffel Tower</a><img src="media/pexels-thorsten-technoman-338515.jpg"></div> -->
+           </div>
+        </div>
+        </section>
+        <script src="js/jarallax.js"></script>
+        <script src="js/jarallax-element.js"></script>
+        <script type="text/javascript">
+             jarallax(document.querySelectorAll('.jarallax'), {
+                   speed: 0.4
+             });
+        </script>
+         <script src="js/cartJapan.js"></script>
+        
+    </body>
+</html>

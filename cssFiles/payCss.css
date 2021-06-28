@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+body
+{
+    overflow: hidden;
+    background-color: rgb(12, 243, 193);
+}
+
+section{
+  display: flex;
+  
+}
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 35px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #b1b1ae;
+  border-radius: 15px;
+}
+
+header .logo
+{
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 35px;
+}
+
+/* header .logo:hover{
+
+  font-size: 22px;
+  letter-spacing: 2px;
+  position: relative;
+} */
+
+/* header .search
+{
+    position: relative;
+    padding-top: 5px;
+    margin-left: 5%;
+    /* transform: translate(-50%, -50%);
+    background: rgb(18, 170, 124);
+    height: 60px;
+    padding: 10px;
+    border-radius:40px ;
+}
+header .search:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+header .search:hover > .search-btn{
+    background: white;
+}
+header .search-btn{
+    color: coral;
+    float: right;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    background: rgb(95, 240, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-weight: 400;
+}
+
+header .search-txt
+{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    line-height: 40px;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    width: 0px;
+}
+header .search-txt::placeholder{
+    color: white;
+} */
+
+header ul li{
+    list-style: none;
+    display: inline-flex;
+    margin-right: 40px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  font-family: itim;
+
+}
+header ul li a:hover{
+  border-bottom:2px solid #ebeb0f; 
+}
+.mainSection
+{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    border-radius: 35px;
+    margin-left:2%;
+    margin-top: 50px;
+   
+    /* border:solid 1px; */
+    box-shadow: rgb(17, 16, 16);
+}
+.mainSection::before
+{
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    left: 40%;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(#f00 , #f0f);
+    border-radius: 50%;
+}
+.cardf
+{
+    position: relative;
+    width: 50%;
+    margin-top: 70px;
+    margin-left: 0;
+    width: 508px;
+    height: 314px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+.cardb
+{
+    position: relative;
+    width: 50%;
+    margin-top: 250px;
+    width: 508px;
+    height: 314px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+.cardf .face,
+.cardb .face
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    transform-style: preserve-3d;
+    transition: 1s;
+  
+    backface-visibility: hidden;
+}
+
+/* .card:hover .face.front {
+    transform: rotateY(180deg);
+}
+.card .face.back {
+    transform: rotateY(180deg);
+}
+.card:hover .face.back {
+    transform: rotateY(360deg);
+} */
+
+
+.cardf .face.front::before
+{
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.cardf .face.front::after
+{
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    right: 80px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+/* .cardf .face.front .debit
+{
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+.cardf .face.front .bank
+{
+    position: absolute;
+    right: 40px;
+    top: 25px;
+    color: #fff;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 24px;
+} */
+
+
+.cardf .face.front .buttonBtx
+{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.cardf .face.front .buttonBtx{
+    cursor: pointer;
+}
+
+.cardf .face.front .buttonBtx .btn 
+{
+    padding: 5px 35px;
+}
+
+.cardf .face.front .buttonBtx label{
+    color: #fff;
+    font-size: 20px;
+}
+/* .cardf .face.front .buttonBtx .buttonRadio
+{
+    background-color: black;
+    color: #fff;
+   
+} */
+
+.cardf .face.front .chip
+{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    max-width: 80px;
+}
+.cardf .face.front .numbers
+{
+    position: absolute;
+    bottom: 130px;
+    left:40px;
+    color: rgb(61, 60, 60);
+
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 18px;
+    padding: 3px 10px;
+    border-radius: 10px;
+    width: 65%;
+    text-shadow: 0 2px 1px #0005;
+    font-family: 'Orbitron',sans-serif;
+    border: 1px solid #111;
+}
+.cardf .face.front .valid
+{
+    position: absolute;
+    bottom: 90px;
+    left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1em;
+    text-align: right;
+}
+.cardf .face.front .valid #months
+{
+    margin-right: 5px;
+}
+
+
+
+.cardf .face.front .valid span:first-child
+{
+    font-size: 15px;
+    font-weight: 300;
+    margin-right: 10px;
+    /* text-transform: uppercase; */
+}
+.cardf .face.front .valid span:nth-child(2)
+{
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+}
+.cardf .face.front .valid span:last-child
+{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+}
+.cardf .face.front  .cardHolder
+{
+    position: absolute;
+    width: 58%;
+    bottom: 40px;
+    left: 40px;
+    color: rgb(51, 48, 48);
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 2px 15px;
+    border: none;
+    letter-spacing: 2px;
+}
+.cardb .face.back .blackbar
+{
+    position: absolute;
+    top: 40px;  
+    width: 100%;
+    height: 60px;
+    background: rgb(31, 30, 30);
+}
+.cardb .face.back .ccvtext
+{
+    position:absolute;
+    top: 120px;
+    left: 30px;
+}
+.cardb .face.back .ccvtext h5{
+    color: #fff;
+    font-weight:400;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.cardb .face.back .ccvtext .whitebar
+{
+    position: relative;
+    width: 92%;
+    height: 40px;
+    background: #fff;
+    margin-top: 5px;
+}
+.cardb .face.back .ccvtext .cvv
+{
+    position: relative;
+    background: #ccc;
+    top:-35px;
+    left:86%;
+    color: #111;
+    width: 50px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.cardb .face.back .ccvtext .cvv .content::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    bottom: -10px;
+    left: 50px;
+    transform: rotate(45deg);
+    border-bottom:1px solid #b1b1ae ;
+    border-right:1px solid #b1b1ae ;
+  
+  } 
+
+  .cardb .face.back .ccvtext .cvv .content{
+    position: absolute;
+    bottom: 55px;
+    width: 220px;
+    
+  
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50px);
+    transition: 0.5s;
+  }
+
+  .cardb .face.back .ccvtext .cvv:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+  
+    z-index: 100;
+    border:0.8px solid #b1b1ae ;
+    transform: translateX(18%) translateY(-0px);
+}
+.cardb .face.back .ccvtext .cvv input {
+    width: 70%;
+}
+
+.cardb .face.back .text 
+{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 1.4em;
+    font-weight: 300;
+}
+
+#money{
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+    width: 150px;
+    height: 45px;
+    background: #fff;
+    color: #000;
+    font-size: 25px;
+  
+    border-radius: 10px;
+    border: 2px solid #f0f;
+    margin-left: 10%;
+}
+.pay
+{
+    
+    bottom: 30px;
+   
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 20px;
+    margin-left: 3%;
+    background: rgb(28, 24, 240);
+
+}
+.pay:hover
+{
+    border-bottom: 3px solid #ebeb0f;
+}
+
+@media(max-width:991px){
+    .cardf{
+        margin-top: 25px;
+        align-items: center;
+    }
+    .cardb{
+        margin-top: 300px;
+    }
+}
